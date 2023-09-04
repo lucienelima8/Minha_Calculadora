@@ -6,7 +6,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f8f6fc;
+    background-image: linear-gradient(rgb(0, 0, 255), rgba(0, 128, 0, 0.856));
+    /*background-color: #f8f6fc;*/
     color: #000000;
     display: flex;
     min-height: 100vh;
@@ -18,7 +19,9 @@ main {
 }
 
 .container {
-	width: 600px;
+    width: 50vw;
+    height: 90vh;
+	/*width: 600px;*/
     position: absolute;
 	top: 50%;
 	left: 50%;
@@ -28,9 +31,15 @@ main {
 	padding: 70px;
   	color: #fff;
 	text-align: center;
-	border-radius: 15px
+	border-radius: 15px;
+    height: 70vh;
+    justify-content: center;
+
+    
+
 }
 
+/*Título*/
 h1 {
     text-align: center;
     font-family: 'Black Ops One', cursive;
@@ -39,18 +48,18 @@ h1 {
      
 }
 
-/*pra ícone calculadora*/
+/*Ícone calculadora*/
 .fa-duotone, .fa-calculator-simple {
     font-size: 16px;
 
 }
 
-
-input[type=number] {
-    text-align: right;
+/*Box entrada de números*/
+/*input[type=number] {
 
 }
 
+/*Box dos números*/
 #num1, #num2 {
     /*display: block;*/
     /*text-align: center;*/
@@ -62,15 +71,26 @@ input[type=number] {
     border: none;
     color: red;
     font-weight: bold;
+    text-align: right;
      
 }
 
+/*Operadores matemáticos*/
+.input_sinais {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    color: black;
+    font-weight: bold;
+
+}
+
+/*Calcular*/
 .btnCalcular {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     letter-spacing: 1px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;
     cursor: pointer;
     padding: 1rem;
@@ -81,17 +101,15 @@ input[type=number] {
 }
 
 
-
+/*Resultado*/
 h2 {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: rgb(16, 236, 16);
+    margin-top: .2rem;
 
 }
-
-
-
 
 
 footer {
@@ -111,20 +129,27 @@ footer {
        
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50em) {
+    /*800px*/
 
     .container {
-        width: 60%;
+        /*width: 60%;*/
+        width: 50vw;
+        height: 50vh;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background: rgba(0, 0, 255, 0.61);
         /*background: #262626;*/
-        padding: 70px;
+        padding: 50px;
         color: #fff;
         text-align: center;
         border-radius: 15px;
+        /*height: auto;*/
+        justify-content: center;
+
+
         
     }
 
@@ -152,6 +177,38 @@ footer {
         color: red;
         font-weight: bold;
          
+    }
+
+    .input_sinais {
+        font-size: 25px;
+        letter-spacing: .2rem;
+        color: black;
+        font-weight: bold;
+    }
+
+    .btnCalcular {
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;
+        cursor: pointer;
+        padding: 1rem;
+        margin-top: .8rem;
+        margin-bottom: .8rem;
+        border-radius: 3px;
+            
+    
+    }
+
+    h2 {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+        color: rgb(16, 236, 16);
+        margin-top: .8rem;
+    
     }
 
 
