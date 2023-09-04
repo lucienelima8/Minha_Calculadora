@@ -3,14 +3,12 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 255, 0.822), rgba(0, 128, 0, 0.726));
     /*background-image: linear-gradient(rgb(0, 0, 255), rgba(0, 128, 0, 0.856));*/
     /*background-color: #f8f6fc;*/
     color: #000000;
-    display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
@@ -21,11 +19,12 @@ main {
 
 .container {
     width: 40vw;
-    height: 90vh;
+    /*height: 90vh;*/
 	/*width: 600px;*/
     position: absolute;
+    align-items: center;
 	top: 40%;
-	left: 50%;
+	/*left: 50%;*/
 	transform: translate(-50%, -50%);
 	background: rgba(83, 83, 248, 0.61);
 	/*background: #262626;*/
@@ -51,7 +50,7 @@ h1 {
 
 /*Ícone calculadora*/
 .fa-duotone, .fa-calculator-simple {
-    font-size: 16px;
+    font-size: 1rem;
 
 }
 
@@ -65,7 +64,7 @@ h1 {
     /*display: block;*/
     /*text-align: center;*/
     /*align-items: center;*/
-    margin-top: 1rem;
+    margin-top: .5rem;
     font-size: 2rem;
     font-weight: 1rem;
     border-radius: 15px;
@@ -75,6 +74,7 @@ h1 {
     text-align: right;
      
 }
+
 
 /*Operadores matemáticos*/
 .input_sinais {
@@ -95,7 +95,7 @@ h1 {
     background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;
     cursor: pointer;
     padding: 1rem;
-    margin: 1rem;
+    /*margin: 1rem;*/
     border-radius: 3px;
         
 
@@ -127,11 +127,16 @@ footer {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
+    position: relative;
        
 }
 
 @media screen and (max-width: 50em) {
     /*800px*/
+
+    body {
+
+    }
 
     .container {
         /*width: 60%;*/
@@ -140,7 +145,7 @@ footer {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        /*transform: translate(-50%, -50%);*/
         background: rgba(83, 83, 248, 0.61);
         /*background: rgba(0, 0, 255, 0.61);*/
         /*background: #262626;*/
@@ -166,7 +171,7 @@ footer {
     }
 
     .fa-duotone, .fa-calculator-simple {
-        font-size: 16px;
+        font-size: 1rem;
             
     }
 
@@ -174,7 +179,7 @@ footer {
 
     #num1, #num2 {
         align-items: center;
-        margin-top: 1rem;
+        margin-top: .5rem;
         font-size: 1rem;
         font-weight: 1rem;
         border-radius: 15px;
@@ -199,9 +204,9 @@ footer {
         font-size: 1rem;
         background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;
         cursor: pointer;
-        padding: 1rem;
-        margin-top: .8rem;
-        margin-bottom: .8rem;
+        padding: .5rem;
+        /*margin-top: .8rem;*/
+        /*margin-bottom: .8rem;*/
         border-radius: 3px;
             
     
@@ -216,8 +221,7 @@ footer {
     
     }
 
-
-      
+        
    
     
 }
