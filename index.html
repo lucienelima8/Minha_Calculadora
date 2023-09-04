@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- pro ícone calculadora -->
+    <script src="https://kit.fontawesome.com/7d79481767.js" crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <script src="index.js"></script>
+
+    <main>
+
+     <div class="container">
+
+        <h1>Minha Calculadora <i class="fa-solid fa-calculator"></i></h1>
+		
+		<input id="num1" name="num1" type="number"> 
+		<input id="num2" name="num2" type="number"><br>
+		<br>
+		<input id="btnSomar" name="sign-area" type="radio" value="add"><b>+</b> 
+		<input id="btnSubtrair" name="sign-area" type="radio" value="subtract"><b>-</b> 
+		<input id="btnMultiplicar" name="sign-area" type="radio" value="multiply"><b>*</b> 
+		<input id="btnDividir" name="sign-area" type="radio" value="divide"><b>/</b><br>
+		<br>
+		<button class="btnCalcular" onclick="calcular()" type="button">Calcular</button>
+		
+        <h2 class="Result" id="resultArea"></h2>
+	 </div>
+    
+     
+    </main>
+
+
+    <footer>Desenvolvido por Luciene Lima - 2023</footer>
+
+    
+    
+</body>
+</html>
