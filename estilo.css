@@ -1,0 +1,161 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f6fc;
+    color: #000000;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+	width: 600px;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 0, 255, 0.61);
+	/*background: #262626;*/
+	padding: 70px;
+  	color: #fff;
+	text-align: center;
+	border-radius: 15px
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Black Ops One', cursive;
+    font-size: 3rem;
+    color: black;
+     
+}
+
+/*pra ícone calculadora*/
+.fa-duotone, .fa-calculator-simple {
+    font-size: 16px;
+
+}
+
+
+input[type=number] {
+    text-align: right;
+
+}
+
+#num1, #num2 {
+    /*display: block;*/
+    /*text-align: center;*/
+    /*align-items: center;*/
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 1rem;
+    border-radius: 15px;
+    border: none;
+    color: red;
+    font-weight: bold;
+     
+}
+
+.btnCalcular {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    background-color: color-mix(in srgb, rgba(255, 0, 0, 0.795), white);    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 3px;
+        
+
+}
+
+
+
+h2 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: rgb(16, 236, 16);
+
+}
+
+
+
+
+
+footer {
+    font-size: 11px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 2px; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*height: 4vh;*/
+    background-color: #c0bebeaf;
+    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+       
+}
+
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 255, 0.61);
+        /*background: #262626;*/
+        padding: 70px;
+        color: #fff;
+        text-align: center;
+        border-radius: 15px;
+        
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 0;
+
+    }
+
+    .fa-duotone, .fa-calculator-simple {
+        font-size: 16px;
+            
+    }
+
+
+
+    #num1, #num2 {
+        align-items: center;
+        margin-top: 1rem;
+        font-size: 1rem;
+        font-weight: 1rem;
+        border-radius: 15px;
+        border: none;
+        color: red;
+        font-weight: bold;
+         
+    }
+
+
+      
+   
+    
+}
